@@ -1,6 +1,6 @@
 import MessageService from "./message-service.js";
 
-let userId = "";
+let userId = "toddbowers";
 const messageService = new MessageService(userId);
 
 window.addEventListener("load", function () {
@@ -62,3 +62,5 @@ function addMessageToThread(message) {
         .appendChild(messageParagraph);
     document.getElementById("message-list").appendChild(messageListItem);
 }
+
+createFormListener();
